@@ -1,8 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int x,y;
+    int x,a;
     scanf("%d",&x);
-    y=(x-(x-1))+(x%10);
-    printf("%d",y);
+    a=x%10;
+    for(;x>9;)
+    {
+        x=x/10;
+    }
+    printf("%d",a+x);
 }
