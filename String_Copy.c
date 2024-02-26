@@ -2,9 +2,9 @@
 #include<string.h>
 int main()
 {
-    char n[1000];
+    int str[100];
     scanf("%[^
-]s",&n);
-    printf("%s",n);
+]s",&str);
+    printf("%s",str);
     
 }
