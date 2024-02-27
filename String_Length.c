@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int c=0,i;
-    char s[1000];
+    int i,c=0;
+    char s[300];
     scanf("%[^
 ]s",&s);
     for(i=0;s[i]!=NULL;i++)
