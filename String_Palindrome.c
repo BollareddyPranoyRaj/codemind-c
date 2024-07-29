@@ -1,26 +1,24 @@
-#include<stdio.h>
-#include<string.h>
-int main()
-{
-    char s[1000],s1[1000];
-    scanf("%[^
-]s",&s);
-    strcpy(s1,s);
-    int t,i,j=strlen(s)-1;
-    while(i<=j)
-    {
-        t=s[i];
-        s[i]=s1[j];
-        s1[j]=t;
-        i++;
-        j--;
+#include<iostream>
+using namespace std;
+bool ispalin(string st1){
+     int l=0;
+     int r =st1.length()-1;
+     while(l<r){
+         if(st1[l]!=st1[r]){
+             return false;
+         }
+       l++;
+       r--;
+     }
+     return true;
+}
+int main(){
+    string st1;
+    cin>>st1;
+    if(ispalin(st1)){
+        cout<<"Palindrome"<<endl;
     }
-    if(strcmp(s1,s)==0)
-    {
-        printf("Palindrome");
-    }
-    else
-    {
-        printf("Not Palindrome");
+    else{
+        cout<<"Not Palindrome"<<endl;
     }
 }
